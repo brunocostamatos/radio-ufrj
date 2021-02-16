@@ -1,0 +1,28 @@
+.container {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   background-color: var(--color-grey);
+   max-width: 100%;
+}
+
+.main {
+   padding: 0 0 8rem;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+}
+
+.logo {
+   margin-bottom: var(--padding);
+}
+
+@media (max-width: 800px) {
+   .logo {
+      display: block;
+      max-width: 65%;
+      max-height: 75px;
+      padding-top: 7px;
+   }
+}

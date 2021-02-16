@@ -1,0 +1,30 @@
+{
+  "name": "@nrtv/root",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "app",
+    "api",
+    "old"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinyfc93/radio-ufrj.git"
+  },
+  "keywords": [
+    "stream",
+    "music",
+    "radio",
+    "graphql"
+  ],
+  "author": "Vinícius Carvalho <vinicius.fc93@gmail.com> (https://coppe.ufrj.br)",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/vinyfc93/radio-ufrj/issues"
+  },
+  "homepage": "https://github.com/vinyfc93/radio-ufrj#readme",
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "prettier": "^1.19.1"
+  }
+}

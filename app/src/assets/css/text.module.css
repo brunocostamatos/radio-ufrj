@@ -1,0 +1,6 @@
+.t1 {
+   font-size: var(--font-size-big);
+   line-height: 1;
+   font-weight: 900;
+   margin: 0 var(--spacing-medium) 0 0;
+}

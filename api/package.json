@@ -1,0 +1,29 @@
+{
+  "name": "@nrtv/api",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "author": "Vinícius Carvalho <vinicius.fc93@gmail.com> (https://coppe.ufrj.br)",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "start": "export PRISMA_URL=http://localhost:4466 && ts-node -T index.ts"
+  },
+  "dependencies": {
+    "apollo-server": "^2.15.0",
+    "cron": "^1.8.2",
+    "graphql": "^14.6.0",
+    "nexus": "^0.11.7",
+    "nexus-prisma": "^0.3.8",
+    "prisma-client-lib": "^1.34.10",
+    "rss-parser": "^3.8.0"
+  },
+  "devDependencies": {
+    "@types/cron": "^1.7.1",
+    "@types/node": "^13.7.0",
+    "@types/xml2js": "^0.4.5",
+    "prisma": "^1.34.10",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}

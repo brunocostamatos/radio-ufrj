@@ -1,0 +1,37 @@
+.container {
+   display: flex;
+   flex: 1;
+   padding: var(--padding) 0 0 0;
+   flex-direction: column;
+   width: 100%;
+}
+
+.container a {
+   flex: 1;
+   display: flex;
+}
+
+.listContainer {
+   position: relative;
+   display: flex;
+   flex: 1 0 auto;
+}
+
+.list {
+   display: flex;
+}
+
+.item {
+   margin-right: var(--padding);
+   flex: 1 0 300px;
+   display: flex;
+   overflow: hidden;
+}
+
+.item article {
+   display: flex;
+}
+
+.cover {
+   width: 100%;
+}

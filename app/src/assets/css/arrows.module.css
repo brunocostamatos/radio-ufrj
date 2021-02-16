@@ -1,0 +1,32 @@
+.container {
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+   background-color: var(--color-white);
+}
+
+.link {
+   text-decoration: none;
+   color: var(--color-blue);
+   font-size: 0;
+   padding: 0.2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.link:hover {
+   background-color: var(--color-blue);
+   color: var(--color-white);
+}
+
+.link.disable {
+   color: var(--color-blue-50) !important;
+   background-color: var(--color-white) !important;
+   pointer-events: visible;
+   cursor: not-allowed;
+}
+
+.link::before {
+   font-size: var(--spacing-big);
+}

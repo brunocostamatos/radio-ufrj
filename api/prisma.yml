@@ -1,0 +1,11 @@
+endpoint: ${env:PRISMA_URL}
+datamodel: ./datamodel.gql
+databaseType: document
+
+generate:
+  - generator: typescript-client
+    output: ./src/generated/prisma-client/
+
+hooks:
+  post-deploy:
+    - npx nexus-prisma-generate --output ./src/generated/nexus-prisma

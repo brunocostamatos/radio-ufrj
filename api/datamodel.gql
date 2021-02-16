@@ -1,0 +1,122 @@
+type User {
+   id: ID! @id
+
+   createdAt: DateTime! @createdAt
+   updatedAt: DateTime! @updatedAt
+
+   name: String!
+
+   bio: String
+
+   userName: String! @unique
+   email: String! @unique
+
+   password: String!
+}
+
+type Config {
+   id: ID! @id
+
+   createdAt: DateTime! @createdAt
+   updatedAt: DateTime! @updatedAt
+
+   timeZone: String!
+   liveUrl: String!
+   liveStatusUrl: String!
+   placeholderCover: String!
+}
+
+enum SourceEnum {
+   PODCAST
+   NEWS
+   PAGE
+}
+
+type Source {
+   id: ID! @id
+
+   createdAt: DateTime! @createdAt
+   updatedAt: DateTime! @updatedAt
+
+   slug: String @unique
+
+   url: String! @unique
+
+   type: SourceEnum! @default(value: PODCAST)
+   title: String
+   description: String
+
+   items: [Item!]! @relation(link: INLINE)
+
+   timer: String! @default(value: "*/10 * * * *")
+   cron: Cron @relation(link: INLINE)
+
+   cover: String
+}
+
+type Tag {
+   id: ID! @id
+
+   createdAt: DateTime! @createdAt
+   updatedAt: DateTime! @updatedAt
+
+   tag: Int! @unique
+   name: String!
+   text: String!
+}
+
+type Item {
+   id: ID! @id
+
+   createdAt: DateTime! @createdAt
+   updatedAt: DateTime! @updatedAt
+
+   slug: String! @unique
+
+   guid: String! @unique
+
+   tags: [Tag!]! @relation(link: INLINE)
+
+   title: String
+   description: String
+
+   publishedAt: DateTime
+   download: String
+   url: String
+   length: Int
+   type: String
+
+   source: Source
+
+   waveform: Wave @relation(link: INLINE)
+}
+
+type Wave {
+   id: ID! @id
+
+   createdAt: DateTime! @createdAt
+   updatedAt: DateTime! @updatedAt
+
+   url: String! @unique
+
+   wave: [Float!]!
+}
+
+enum CronEnum {
+   STARTING
+   RUNNING
+   IDLE
+   STOPED
+}
+
+type Cron {
+   id: ID! @id
+
+   createdAt: DateTime! @createdAt
+   updatedAt: DateTime! @updatedAt
+
+   pid: Int! @unique
+   health: Boolean
+   status: CronEnum!
+   lastMessage: String
+}

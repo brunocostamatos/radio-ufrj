@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Desligado</title>
+    <g id="XL/Icon/Ao-vivo/--Color" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Content">
+            <g id="XL/Icon/Cicle">
+                <g id="Content">
+                    <circle id="pulse" fill="#FB3030" opacity="0.5" cx="21" cy="21" r="9" style="transition: r 100ms ease-out 0s"></circle>
+                    <rect id="ViewBox" fill-rule="nonzero" x="0" y="0" width="42" height="42"></rect>
+                </g>
+            </g>
+            <g id="XL/Icon/Cicle" transform="translate(11.000000, 11.000000)">
+                <g id="Content">
+                    <circle id="Oval" fill="#FB3030" cx="10" cy="10" r="7.14285714"></circle>
+                    <rect id="ViewBox" fill-rule="nonzero" x="0" y="0" width="20" height="20"></rect>
+                </g>
+            </g>
+            <rect id="ViewBox" fill-rule="nonzero" x="0" y="0" width="42" height="42"></rect>
+        </g>
+    </g>
+</svg>

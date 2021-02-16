@@ -1,0 +1,36 @@
+.pause:before {
+   content: '\e90d';
+}
+.arrow_left:before {
+   content: '\e900';
+}
+.arrow_right:before {
+   content: '\e901';
+}
+.calendar:before {
+   content: '\e902';
+}
+.coffee:before {
+   content: '\e903';
+}
+.description:before {
+   content: '\e904';
+}
+.group:before {
+   content: '\e905';
+}
+.home:before {
+   content: '\e906';
+}
+.live_mono:before {
+   content: '\e909';
+}
+.music_note:before {
+   content: '\e90a';
+}
+.play:before {
+   content: '\e90b';
+}
+.singer:before {
+   content: '\e90c';
+}

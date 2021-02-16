@@ -1,0 +1,31 @@
+.container {
+   margin-bottom: var(--padding);
+   display: flex;
+   /* justify-content: center; */
+   flex-wrap: nowrap;
+   width: 100%;
+}
+
+.container > * {
+   margin-right: var(--padding);
+}
+
+.container > *:last-child {
+   margin-right: 0;
+}
+
+@media (max-width: 700px) {
+   .container:first-of-type {
+      padding-top: calc(var(--padding) / 2);
+   }
+   .container {
+      flex-direction: column;
+   }
+   .container > * {
+      margin-right: 0;
+      margin-bottom: var(--padding);
+   }
+   .container > *:last-child {
+      margin-bottom: 0;
+   }
+}

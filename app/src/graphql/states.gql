@@ -1,0 +1,53 @@
+#import "./generated/schema.gql"
+
+extend type Query {
+   state: State!
+}
+
+type Live {
+   url: String
+   cover: String
+   statusUrl: String
+   content: LiveContent!
+}
+
+type State {
+   player: Player
+   pagination: [Pagination!]
+   page: Int
+   menus: [MenuItem!]
+   live: Config!
+}
+
+type LiveContent {
+   name: String!
+   clock: String!
+   music: String!
+   singer: String!
+   author: String!
+}
+
+type Player {
+   id: Int
+}
+
+type Pagination {
+   id: Int
+}
+
+type MenuItem {
+   index: Int!
+   href: String!
+   icon: String!
+   text: String!
+   sub: Boolean!
+   component: String!
+   type: String
+   path: String
+   param: String
+   orderBy: String
+}
+
+extend type Mutation {
+   updatePage(page: Int): State
+}

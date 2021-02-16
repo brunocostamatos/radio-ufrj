@@ -1,0 +1,27 @@
+.up {
+   box-shadow: 0 0.5rem 1.25rem 0 var(--color-black-30);
+}
+
+.down {
+   box-shadow: 0 3px 10px 0 var(--color-black-30);
+}
+
+.up,
+.down {
+   transition-property: box-shadow opacity;
+   transition-timing-function: ease-in-out;
+   transition-duration: 300ms;
+}
+
+.up:hover,
+.down:hover {
+   transition-duration: 300ms !important;
+}
+
+.up:hover {
+   box-shadow: 0 3px 10px 0 var(--color-black-30);
+}
+
+.down:hover {
+   box-shadow: 0 0.5rem 1.25rem 0 var(--color-black-30);
+}

@@ -1,0 +1,5 @@
+docker*
+.docker*
+.env
+lib
+node_modules

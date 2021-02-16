@@ -1,0 +1,44 @@
+.btnToggle {
+   color: var(--color-white);
+   font-size: 0;
+   text-decoration: none;
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   border-radius: 3px;
+   overflow: hidden;
+   border: 2px solid var(--color-white);
+   width: 14rem;
+   height: 14rem;
+   z-index: 2;
+}
+.btnToggle img {
+   width: 100%;
+   filter: brightness(0.95);
+}
+
+.btnToggle::before {
+   font-size: 4.5rem;
+   position: absolute;
+   text-shadow: 0 0 10px var(--color-black);
+   z-index: 2;
+}
+
+.bgContainer {
+   position: relative;
+}
+
+.bg,
+.bgClean {
+   position: absolute;
+   min-height: 130%;
+   min-width: 130%;
+   transform: translate(-10%, -10%);
+   z-index: 1;
+   pointer-events: none;
+}
+
+.bg {
+   filter: blur(8px) saturate(0.8) brightness(0.15);
+}

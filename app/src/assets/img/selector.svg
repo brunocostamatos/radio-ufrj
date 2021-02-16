@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="1 1 194 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>XL/Selector/Menu/-Black</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-16.5%" y="-125.0%" width="133.0%" height="316.7%" filterUnits="objectBoundingBox" id="filter">
+            <feOffset dx="0" dy="-5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="XL/Selector/Menu/-Black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-">
+            
+            <path d="M0,30 C40,30 59,0 99,0 C139,0 157,30 197,30 L0,30 Z" id="Rectangle" fill="#FFFFFF" filter="url(#filter)"></path>
+            <path d="M0,30 C40,30 59,0 99,0 C139,0 157,30 197,30 L0,30 Z" id="Rectangle" fill="#FFFFFF"></path>
+            <polygon id="Rectangle" fill="#FFFFFF" points="0 30 96.9205336 25 197 30 197 58 0 58"></polygon>
+            <path d="M99.925547,39.7375519 L107.323696,21.6531888 C107.740429,20.6345063 107.565885,19.4694156 106.868927,18.6175769 L100.547915,10.8918956 C99.8484594,10.037006 98.588414,9.91100145 97.7335244,10.6104566 C97.6305868,10.6946783 97.5363071,10.788958 97.4520854,10.8918956 L91.1310735,18.6175769 C90.4341145,19.4694156 90.2595708,20.6345063 90.6763045,21.6531888 L98.074453,39.7375519 C98.2835662,40.2487174 98.8674674,40.4935791 99.3786328,40.284466 C99.6269142,40.1828964 99.8239773,39.9858332 99.925547,39.7375519 Z" id="seta" fill-opacity="0.6" fill="#E90000" transform="translate(99.000000, 25.500000) rotate(-180.000000) translate(-99.000000, -25.500000) "></path>
+        </g>
+    </g>
+</svg>
